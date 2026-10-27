@@ -73,7 +73,9 @@ The app UI is deliberately read-only: the current framework cannot ask for tool 
 
 ![Hosted read-only review console](evidence/hosted-console.png)
 
-`evidence/integration.json` records 18 checks against the real official local runtime, including an actual runtime restart and eight concurrent duplicate applies. `tests/core.test.mjs` has seven validation tests. TypeScript checking passed. The hosted console was separately deployed and visually inspected with a synthetic request. Screenshots are in `evidence/`.
+![Same hosted request after review and workflow apply](evidence/hosted-applied.png)
+
+`evidence/integration.json` records 18 checks against the real official local runtime, including an actual runtime restart and eight concurrent duplicate applies. `tests/core.test.mjs` has seven validation tests. TypeScript checking passed. The hosted console was separately deployed and visually inspected with a synthetic request. Its separate dashboard approval and waiting workflow completed too, producing one saved synthetic note. Screenshots are in `evidence/`.
 
 Tests programmatically accept their synthetic confirmations. They test delivery and state transitions, not human identity or real-world permission.
 
