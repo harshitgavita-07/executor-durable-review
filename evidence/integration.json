@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-27T00:58:20.212Z",
+  "runtime": "executor v2.0.0-beta.30",
+  "framework": "0.0.1-beta.110",
+  "app": "app_1b2f3104-f18d-40d4-a930-f9511ae39ba5",
+  "checks": [
+    "deployed official framework and discovered all ten operations",
+    "idempotent prepare uses one saved request",
+    "reused request key cannot change payload",
+    "pending request cannot apply",
+    "workflow start recovers the same durable run",
+    "workflow remains active waiting for review instead of approval error",
+    "pending review survives actual runtime restart",
+    "review digest mismatch leaves request pending",
+    "exact payload decision passes separate Executor approval",
+    "resumed durable workflow applies one synthetic note",
+    "eight concurrent duplicate applies keep one note",
+    "audit trail records prepare, decision, apply once",
+    "declining Executor confirmation does not record approval",
+    "explicit rejection prevents apply",
+    "rejected decision cannot be reversed",
+    "cancellation prevents apply while workflow waits",
+    "real-time expiry prevents late approval and apply",
+    "rejected, cancelled, expired and refused paths created no extra notes"
+  ],
+  "scope": "Synthetic local SQL only. Programmatic confirmations exercise plumbing; they are not human approvals."
+}
